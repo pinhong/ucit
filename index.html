@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="loginStyle.css">
+
+<!---Fit to apple mobile---->
+
+                                <link rel="apple-touch-icon" href="appicon.png" />
+                                <link rel="apple-touch-startup-image" href="startup.png">
+                                <meta name="apple-mobile-web-app-capable" content="yes">
+                                <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                                <meta name="viewport" content="width=device-width, user-scalable=no">
+
+
+
+
+<title>Welcome to Injury Tracker</title>
+
+</head>
+
+<!-------------------------Alert Function---------------------------------->
+<script type="text/javascript">
+	
+	var click = 1;
+	
+	function countClick(){
+		click= click + 1;
+		function colorBox(click){
+		var a_canvas = document.getElementById("a");
+		var context = a_canvas.getContext("2d");
+		context.font = "10px Garamond";
+		context.fillText("picked color",150 * click,175 * click);
+		}
+		
+		colorBox(click);
+	}
+	
+	function loginAlert(){
+		alert("Successfully login if email and password matches to our database, otherwise system will show faild to login warning");
+	}
+	
+	function registerAlert(){
+		alert("This link will lead to register page for unregistered users");
+	}
+
+</script>
+
+<style>
+.title{
+text-align:center;
+margin-bottom: 40px;
+font-family: Calibri, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+font-size: 23px;
+color:#ffffe6;
+text-shadow: 2px 2px 4px #000000;
+}
+body{background-color:darkgrey;}
+</style>
+
+
+
+<body>
+
+
+<!--------------------------------------------- Website title ---------------------------------------->
+	<div class = "title">
+		<h1 class="titleText"> Injury Tracker </h1>
+	</div>
+
+<!--------------------------------------------- Login Table ---------------------------------------->
+	
+	<table width="100" border="7" align="center" cellpadding="0" cellspacing="10" bgcolor="#ffffe6" style="margin-top:20px" action="..//home_trainer.html">
+	<tr>
+	<form>
+	<td>
+	<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#ffffe6">
+	<tr>
+	<td colspan="3"><strong>Please Login </strong></td>
+	</tr>
+	<tr>
+	<td width="78">E-mail</td>
+	<td width="6">:</td>
+	<td width="294"><input name="email" type="text" id="email" size="30"/></td>
+	</tr>
+	<tr>
+	<td>Password</td>
+	<td>:</td>
+	<td><input name="password" type="password" id="password" size="30"/></td>
+	</tr>
+	<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td><a href="trainerHome.html"><input name="submit" type="button" value="Login"  /></a></td>
+	</tr>
+	If you haven't registered yet, click <b><a href="blank_page.html" color="#1a1aff">here</a></b> to sign up.</a>
+	</table>
+	</td>
+	</form>
+	</tr>
+	</table>
+
+	
+	
+</body>
+</html>

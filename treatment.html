@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css">
+ 
+<!---Fit to apple mobile---->
+ 
+                                <link rel="apple-touch-icon" href="appicon.png" />
+                                <link rel="apple-touch-startup-image" href="startup.png">
+                                <meta name="apple-mobile-web-app-capable" content="yes">
+                                <meta name="apple-mobile-web-app-status-bar-style" content="black">
+                                <meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+ 
+  <script>
+  $(document).ready(function() {
+    $("#datepicker").datepicker();
+  });
+  </script>
+ 
+ 
+ 
+<title>Welcome to Injury Tracker</title>
+ 
+</head>
+ 
+<style>
+.title{
+text-align:center;
+margin-bottom: 40px;
+font-family: Calibri, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+font-size: 15px;
+color:#ffffe6;
+text-shadow: 2px 2px 4px #000000;
+}
+body
+    {
+        background-color:darkgrey;
+    }
+</style>
+ 
+<h>
+<!--------------------------------------------- Feature title ---------------------------------------->
+                <div class = "title">
+                                <h1 class="titleText"> Treatment </h1>
+                </div>
+ 
+<!------------Form of New Injury------------>
+<form action=""  style = "background-color:#ffffe6; border: solid; border-radius:2%;">
+  <fieldset>
+      <legend style = "font-size: 20px;"> <b>Treatment</b> </legend>
+      <br><br>
+    Area of Treatment Applied:<br>
+    <input type="text" name="Area of Treatment" >
+    <br>
+                <br>
+                Date of Treatment:<br>
+                <input id="datepicker" name="date"/>
+                <br>
+    <br>
+                Type of Treatment:<br><br>
+    <select>
+        <option>Ultrasound</option>
+        <option>Stim</option>
+      </select>
+    <br><br>
+               
+    <a href="blank_page.html"><input type="button" value=">> Rehab"></a>
+      <br><br>
+  </fieldset>
+ 
+</form>
+ <br>
+<a href="newInjury.html"><button  style="margin-buttom:30px; float: left;">Back</button></a>
